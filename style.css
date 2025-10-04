@@ -1,0 +1,151 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+
+body{
+background-color:;
+}
+
+.container-nav{
+    background-color: #A2B06D ;
+}
+
+.container-nav nav{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem 2rem;
+
+}
+
+.container-nav nav ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.container-nav nav div img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    
+}
+
+.container-nav nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 8px 0;
+    transition-duration: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid transparent;
+}
+
+.container-nav nav ul li a:hover{
+    color: #FF4500;
+    border-bottom: 1px solid #FF4500;
+}
+
+.menu-icon{
+    font-size: 24px;
+    display: none;
+  
+}
+
+
+.home-content{
+    margin-top: 2.2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+
+.home-content img{
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+}
+
+.home{
+    margin-left: 100px;
+}
+
+.home h1{
+   margin-bottom: 0.75rem;
+}
+
+.bestseller-content{
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.bestseller-content .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+.header h2{
+    color: orange;
+    margin: 0;
+}
+
+.bestseller-content .container-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container-img .img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.container-img .img .burger-desc h3{
+    margin-top: 0;
+    margin: 1rem;
+}
+
+.container-img .img .burger-desc{
+    padding: 1rem;
+}
+
+#contact{
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container-nav nav{
+        flex-wrap: wrap;
+    }
+   .container-nav nav ul{
+    flex-direction: column;
+    width: 100%;
+      }
+
+      .container-nav nav ul.hidden{
+        display: none;
+      }
+
+      .container-nav nav ul li:last-of-type{
+        margin-bottom: 8px;
+      }
+
+   .menu-icon{
+      display: flex;
+      align-items: center;
+   }
+}
