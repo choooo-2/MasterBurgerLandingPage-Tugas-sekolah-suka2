@@ -134,6 +134,8 @@ background-color:;
    .container-nav nav ul{
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    margin-top: 1rem;
       }
 
       .container-nav nav ul.hidden{
@@ -148,4 +150,11 @@ background-color:;
       display: flex;
       align-items: center;
    }
+
+   .bestseller-content .container-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 }
