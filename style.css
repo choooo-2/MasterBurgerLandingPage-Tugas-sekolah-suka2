@@ -1,14 +1,23 @@
-*, html{
-    padding: 0;
-    margin: 0;
+*{
     box-sizing: border-box;
+    user-select: none;
     caret-color: transparent;
 }
 
-body{
-background-color:;
+img{
+    pointer-events: none
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    height: 100dvh;
+}
+
+/* Bagian Navbar */
 .container-nav{
     background-color: #A2B06D ;
 }
@@ -31,7 +40,6 @@ background-color:;
     width: 150px;
     height: 50px;
     object-fit: cover;
-    
 }
 
 .container-nav nav ul li a{
@@ -49,13 +57,14 @@ background-color:;
     border-bottom: 1px solid #FF4500;
 }
 
+/* Button Atau Icon  Reponsive*/
 .menu-icon{
     font-size: 24px;
     display: none;
   
 }
 
-
+/* Bagian Home Atau Tampilan Awal Web */
 .home-content{
     margin-top: 2.2rem;
     padding: 1rem 2rem;
@@ -63,7 +72,6 @@ background-color:;
     display: flex;
     justify-content:flex-end;
     align-items: center;
-
 }
 
 
@@ -81,16 +89,15 @@ background-color:;
    margin-bottom: 0.75rem;
 }
 
-.bestseller-content{
-    padding: 1rem 2rem;
-    margin-bottom: 4rem;
+/* Bagian Menu */
+#bestseller{
+    margin-bottom: 150px;
 }
 
 .bestseller-content .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0rem;
 }
 
 .header h2{
@@ -98,18 +105,152 @@ background-color:;
     margin: 0;
 }
 
-.bestseller-content .container-img{
+.slider-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-container{
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    height: 100dvh;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px gray;
+    overflow: hidden;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider.active{
+    opacity: 1;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
+
+.caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    padding: 10px;
+}
+
+.caption h1{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.caption p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.nav.prev{
+    left: 0;
+    border-radius: 0 20% 20% 0;
+}
+
+.nav.next{
+    right: 0;
+    border-radius: 20% 0 0 20%;
+}
+
+.dots-container{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dot.active, .dot:hover{
+    background-color: cyan;
+    transform: scale(1.2);
+}
+
+/* Bagian Promo */
+.container-promo{
+    background-color: #CC4F2B;
+    height: auto;
+}
+
+.promo{
+    padding: 1rem 2rem;
+}
+
+.promo .container-img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+}
 
+.promo h1{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow:
+    0 0 30px green,
+    0 0 60px green,
+    0 0 90px green,
+    0 0 120px green,
+    0 0 150px green,
+    0 0 180px green 
+    ;
 }
 
 .container-img .img img{
     width: 300px;
     height: 300px;
-    object-fit: cover;
 }
 
 .container-img .img .burger-desc h3{
@@ -121,11 +262,37 @@ background-color:;
     padding: 1rem;
 }
 
-#contact{
-    padding: 1rem 2rem;
-    margin-bottom: 4rem;
+.container-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
 }
 
+.container-img .img img{
+    width: 300px;
+    height: 300px;
+}
+
+.container-img .img .burger-desc h3{
+    margin-top: 0;
+    margin: 1rem;
+}
+
+.container-img .img .burger-desc{
+    padding: 1rem;
+}
+
+.img{
+    width: 370px;
+    border-radius: 20px;
+    background:linear-gradient(to bottom, #2C3E50,#B45309 );
+    box-shadow: 0 20px 10px black;
+    color: white;
+}
+
+/* Bagian Responsive */
 @media only screen and (max-width: 768px) {
 
     .container-nav nav{

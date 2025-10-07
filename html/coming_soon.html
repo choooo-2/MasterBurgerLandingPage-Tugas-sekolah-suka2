@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    /* Background gradasi animasi */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Judul */
+.title {
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+  animation: fadeIn 3s ease-in-out;
+  opacity: 0.8;
+}
+
+/* Loader animasi */
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(255,255,255,0.3);
+  border-top: 5px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🚀 Coming Soon</h1>
+    <p class="subtitle">Sesuatu yang keren sedang dalam perjalanan...</p>
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
