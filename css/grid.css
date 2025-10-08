@@ -1,0 +1,39 @@
+.container-img {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    flex-wrap: nowrap; /* biar nggak turun ke bawah */
+}
+
+.img {
+    flex: 1;
+    width: 25vw;   /* ikut lebar layar */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #2C3E50, #B45309);
+    box-shadow: 0 20px 10px black;
+    color: white;
+    padding: 1rem;
+}
+
+.img img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.burger-desc h3 {
+    font-size: 2vw; /* ikut mengecil */
+    margin: 1rem 0;
+}
+
+.burger-desc p {
+    font-size: 1.2vw;
+}
+
+.burger-desc button {
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+}
