@@ -292,6 +292,16 @@ section{
     color: white;
 }
 
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
 /* Bagian Responsive */
 @media only screen and (max-width: 768px) {
 
