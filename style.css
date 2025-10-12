@@ -14,10 +14,6 @@ body{
     overflow-x: hidden;
 }
 
-section{
-    height: 100dvh;
-}
-
 /* Bagian Navbar */
 .container-nav{
     background-color: #A2B06D ;
@@ -66,6 +62,10 @@ section{
 }
 
 /* Bagian Home Atau Tampilan Awal Web */
+#home{
+    height: 100dvh;
+}
+
 .home-content{
     margin-top: 2.2rem;
     padding: 1rem 2rem;
@@ -93,6 +93,7 @@ section{
 /* Bagian Bestseller */
 #bestseller{
     margin-bottom: 150px;
+    height: 100dvh;
 }
 
 .bestseller-content .header{
@@ -221,7 +222,6 @@ section{
 /* Bagian Promo */
 .container-promo{
     background-color: #CC4F2B;
-    height: auto;
 }
 
 .promo{
@@ -296,21 +296,13 @@ section{
     color: white;
 }
 
-.footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 14px;
-}
-
 /* Bagian Contact Atau About */
 .about{
     text-align: center;
 }
 
 .about h1{
-    margin-bottom: 50px;
+    margin: 50px 0 ;
 }
 
 .container-contact{
@@ -322,16 +314,49 @@ section{
 }
 
 .contact{
-    flex-basis: 200;
     width: 300px;
     height: 400px;
-    border-radius: 20px;
+    border-radius: 30px 30px 20px 20px;
     box-shadow: 0 0 20px black;
 }
 
-.tentang-diri button{
+.contact button{
     border-radius: 10px;
-    width: 50px;
+    width: 100px;
+}
+
+.tentang-diri{
+    height: 70%;
+    margin: 10px 20px 20px 20px;
+}
+
+.tentang-diri img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.tentang-diri p{
+    margin-top: 20px;
+}
+
+.jabatan{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    padding: 10px;
+    background: gray;
+    align-items: center;
+}
+
+/* Bagian Footer */
+.footer {
+    margin-top: 50px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
 
 
