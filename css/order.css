@@ -1,0 +1,152 @@
+*{
+    caret-color: transparent;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img{
+    pointer-events: none;
+}
+
+/* Bagian Navbar */
+.container-nav{
+    background-color: #2C3930 ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+.container-nav nav{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem 2rem;
+}
+
+.back{
+    text-align: center;
+    float: left;
+    align-self: center;
+    color: cyan;
+    background: gray;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.container-nav nav ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.container-nav nav div img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.container-nav nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cyan;
+    padding: 8px 0;
+    transition-duration: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid transparent;
+}
+
+.container-nav nav ul li a:hover{
+    color: #FF4500;
+    border-bottom: 1px solid #FF4500;
+}
+
+/* Bagian menu */
+/* Bagian Makanan */
+.menu_makanan{
+    text-align: center;
+    background: #7B542F;
+    padding: 20px 0;
+    margin-top: 70px;
+}
+
+.menu_makanan h1{
+    color: #FF9D00;
+    text-shadow: 0 10px 10px #DD0303;
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 50px;
+}
+
+.container_makanan{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.block{
+    background: #e6d8c3;
+    margin-top: 30px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 0 20px black;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+.block img{
+    object-fit: cover;
+    width: 150px;
+    height: 100px;
+    border-radius: 30px;
+}
+
+.block h2{
+    font-size: 20px;
+}
+
+.block button{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border: 0;
+    background-color: green;
+    color: cyan;
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+/* Bagian Minuman */
+.menu_minuman{
+    text-align: center;
+    background: #3B9797;
+    padding: 20px 0;
+}
+
+.menu_minuman h1{
+    color: cyan;
+    text-shadow: 0 10px 10px blue;
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 50px;
+}
+
+.container_minuman{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
