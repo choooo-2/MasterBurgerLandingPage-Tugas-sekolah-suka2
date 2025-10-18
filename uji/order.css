@@ -1,0 +1,186 @@
+/* Font dan warna utama */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary: #ff8c32;
+  --secondary: #141a1f;
+  --accent: rgba(255, 255, 255, 0.1);
+  --text-light: #fff;
+  --text-dim: #bdbdbd;
+  --bg-dark: #0a0f14;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.container-nav {
+  backdrop-filter: blur(20px);
+  background: rgba(10, 10, 10, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+nav img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+nav .back {
+  cursor: pointer;
+  background: var(--primary);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav .back:hover {
+  background: #ffa552;
+  transform: scale(1.05);
+}
+
+/* Judul section */
+section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 3px;
+}
+
+/* Container makanan & minuman */
+.container_makanan,
+.container_minuman {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  padding: 20px 60px;
+}
+
+/* Card makanan/minuman */
+.block {
+  background: var(--accent);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.block img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.block:hover img {
+  filter: brightness(0.9);
+}
+
+.block h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.block p {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0 15px 20px;
+}
+
+.block button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.block button:hover {
+  background: #ffa552;
+  transform: scale(1.05);
+}
+
+/* Bestseller section */
+.banyak-beli {
+  margin-top: 80px;
+}
+
+.container-banyak-beli {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 40px;
+}
+
+.container-banyak-beli .block {
+  width: 270px;
+  text-align: center;
+  position: relative;
+}
+
+.mahkota {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container_makanan,
+  .container_minuman {
+    padding: 20px 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .container-banyak-beli {
+    flex-direction: column;
+    align-items: center;
+  }
+}
