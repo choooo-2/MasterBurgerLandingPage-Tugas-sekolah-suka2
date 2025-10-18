@@ -70,9 +70,10 @@ img{
 /* Bagian Makanan */
 .menu_makanan{
     text-align: center;
-    background: #7B542F;
+    background:linear-gradient(to bottom, #7B542F 90%, #3B9797 );
     padding: 20px 0;
     margin-top: 70px;
+    padding-bottom: 100px;
 }
 
 .menu_makanan h1{
@@ -83,6 +84,7 @@ img{
     font-weight: 400;
     font-style: normal;
     letter-spacing: 50px;
+    
 }
 
 .container_makanan{
@@ -149,4 +151,63 @@ img{
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+}
+
+/* Bagian Besseller */
+#banyak-beli{
+    text-align: center;
+    background: #FFE100;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    height: auto;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.banyak-beli h1{
+    margin: 30px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 10px;
+    color: #FFB200;
+    text-shadow: 0 10px 10px yellow, 0 15px 10px yellow;
+}
+
+.container-banyak-beli{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mahkota{
+    position: absolute;
+    height: 200px;
+    object-fit: cover;
+    z-index: 2;
+    top: -80px;
+}
+
+.juara-1{
+    transform: scale(1.3);
+    margin-top: 10%;
+    z-index: 2;
+    box-shadow: 0 50px 60px black;
+}
+
+.juara-2{
+    transform: scale(1.1);
+    margin-top: 10%;
+    z-index: 1;
+    box-shadow: 0 40px 40px black;
+}
+
+.juara-3{
+    transform: scale(1);
+    margin-top: 10%;
+    z-index: 0;
+    box-shadow: 0 10px 10px black;
 }
