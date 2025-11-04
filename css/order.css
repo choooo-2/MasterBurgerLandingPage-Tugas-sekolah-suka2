@@ -92,6 +92,7 @@ img{
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .block{
@@ -151,6 +152,7 @@ img{
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 /* Bagian Besseller */
