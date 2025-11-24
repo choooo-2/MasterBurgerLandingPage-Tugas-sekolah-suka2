@@ -45,6 +45,10 @@ img{
     list-style: none;
 }
 
+#tambah_menu{
+    color: white;
+}
+
 .container-nav nav div img {
     width: 150px;
     height: 50px;

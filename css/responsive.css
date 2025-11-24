@@ -1,0 +1,80 @@
+/* ========================= */
+/*   RESPONSIVE FOR PHONE    */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+    top: 70px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0004;
+    gap: 10px;
+    width: 180px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+
+  /* HOME SECTION */
+  .home-content {
+    flex-direction: column-reverse !important;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .home {
+    width: 100% !important;
+  }
+
+  .home img {
+    width: 100%;
+  }
+
+  /* GRID SEMUA MENU MAKANAN & MINUMAN */
+  .container_makanan,
+  .container_minuman,
+  .container-banyak-beli,
+  .container-promo,
+  .container-img,
+  .container-contact {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* BLOCK CARD */
+  .block,
+  .produk-promo,
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+
+  /* GAMBAR MAPAN */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* BUTTON FULL */
+  button {
+    width: 100%;
+  }
+}
